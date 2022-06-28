@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <!-- 引入font-awesome字体库与动画库-->
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+    <title>
+        <%= htmlWebpackPlugin.options.title %>
+    </title>
+</head>
+<style>
+
+</style>
+
+<body>
+<div id="app">
+</div>
+
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/2.2.4/jquery.js"></script>
+<!--添加canvas元素和底部气泡、背景彩带运动逻辑和样式设定代码-->
+<script src="js/circleMagic.js"></script>
+<!--H5音乐播放器和基于它的插件，开箱即用-->
+<script src="https://fastly.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+<script src="https://fastly.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+<!--点击特效，爆散泡泡-->
+<script src="js/clickBurst.js"></script>
+
+</body>
+
+</html>
